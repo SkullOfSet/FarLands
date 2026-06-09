@@ -1,0 +1,24 @@
+name: FarLands
+version: '2.0.0'
+main: dev.farlands.FarLands
+api-version: '1.21'
+description: >
+  Adds the Far Lands to Paper 1.21.2, as seen in Wemmbus's Unstable SMP.
+  All terrain zones, Spikelands, Gravel Lands, Repeating Dungeons, Biome
+  Scramble, Orbital Cannon structures, and progressively worsening terrain
+  out to 250k. One file. Geyser/Bedrock compatible.
+authors: [FarLandsSMP]
+
+commands:
+  farlands:
+    description: FarLands commands
+    usage: /farlands <info|tp|reload>
+    aliases: [fl]
+
+permissions:
+  farlands.admin:
+    description: Admin (reload)
+    default: op
+  farlands.teleport:
+    description: Teleport to Far Lands zones
+    default: op

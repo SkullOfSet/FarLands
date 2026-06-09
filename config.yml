@@ -1,0 +1,64 @@
+# ================================================================
+#  FarLands v2 — config.yml
+#  Paper 1.21.2 | Geyser/Bedrock compatible
+#  Everything from the Wemmbus Unstable SMP Far Lands arc.
+# ================================================================
+
+world-name: "world"
+enable-nether-farlands: true
+
+# --- ZONE DISTANCES (all in blocks from 0,0) ---
+# The Far Lands ENDS around 250k. Everything below is the build-up.
+
+gravel-lands-start: 60000       # First sign: gravel replaces terrain surface
+spikelands-start: 70000         # Spiky mountains begin appearing
+farlands-wall-start: 80000      # The Edge Far Lands wall begins here
+repeating-dungeon-start: 110000 # Repeating dungeon zone (infinite gapples lore)
+biome-scramble-start: 120000    # Chunks of every biome mashed together
+absolute-end-start: 135000      # Terrain breaks down, grass disappears
+void-start: 150000              # Actual void — terrain stops generating
+
+# --- WALL SETTINGS ---
+wall-thickness-chunks: 60       # Depth of the main FL wall in chunks (60 = 960 blocks)
+wall-height-fraction: 0.92      # How tall the wall is as fraction of world height
+hole-density: 0.38              # Swiss-cheese hole density (0=solid, 1=all holes)
+
+# --- SPIKELANDS ---
+spike-min-height: 20
+spike-max-height: 220
+spike-density: 0.13             # 0.0–1.0; gradual scaling applied automatically
+spike-material: STONE
+
+# --- INNER FAR LANDS ---
+inner-depth: 100                # How wide the inner face zone is (blocks)
+
+# --- CORNER FAR LANDS ---
+corner-layer-count: 4
+corner-layer-spacing: 18
+
+# --- ORBITAL CANNONS ---
+# Decorative cannon structures that spawn along the Far Lands wall face.
+# Based on the cannon installation seen in Wemmbus's Unstable SMP videos.
+orbital-cannons-enabled: true
+cannon-spacing-blocks: 512      # One cannon platform every N blocks along the wall
+cannon-platform-width: 40       # Width of each cannon platform
+cannon-platform-length: 80      # Length of each cannon platform
+
+# --- ATMOSPHERE ---
+entry-title: true
+particle-effects: true
+
+# Zone entry messages (all support & color codes)
+msg-gravel:   "§8§lThe terrain is changing..."
+msg-spikes:   "§6§lSomething is wrong..."
+msg-wall:     "§4§lThe Far Lands"
+msg-dungeon:  "§d§lRepeating Structures Detected"
+msg-scramble: "§b§lThe World is Breaking"
+msg-end:      "§0§lThe Absolute End"
+
+msg-sub-gravel:   "§7The ground feels unstable."
+msg-sub-spikes:   "§eSpikes rise from the earth."
+msg-sub-wall:     "§cYou should not have come here."
+msg-sub-dungeon:  "§5The world keeps repeating..."
+msg-sub-scramble: "§3Every biome at once. Impossible."
+msg-sub-end:      "§8There is nothing left."
